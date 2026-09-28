@@ -10,6 +10,8 @@ The design is deliberately simple: **“3 iframes in a trenchcoat”** — two G
 
 Read this README and the diaries in [`documentation/`](documentation/) before changing the project. The initial repository review and decisions are in [`documentation/2026-09-29_diary.md`](documentation/2026-09-29_diary.md).
 
+For event work, read the [calendar formatting guide](documentation/event-formatting.md) and [2026 festival research notes](documentation/2026-festival-research.md). The [festival shortlist CSV](documentation/events/2026-festival-shortlist.csv) records timings, sources, and matches against the [supplied calendar export](documentation/aus_games_events_2026-09-26.ics).
+
 **`docs/` is the public website directory. Write documentation in `documentation/`.** This project overrides the usual convention of putting agent diaries and plans in `docs/`.
 
 - Preserve the static, Google Calendar / Google Forms approach and the ability to hand management to community leaders.
@@ -54,6 +56,8 @@ If the shared calendar changes, update both iframe sources, the subscription lin
 
 ## Preparing events with an agent
 
+David's preferred workflow is to prepare files for manual import. No plugins or Calendar API setup are required. Start with a research CSV when discovering events, then produce ICS files for selected events using the formatting guide and a recent calendar export to avoid duplicates. Prioritise developer learning, networking, creation, and playtesting; exclude consumer-focused events and long-running exhibitions.
+
 An agent can prepare a downloadable `.ics` file for one event or a batch without Google account access or changes to the website. Provide an event announcement or source link, plus any details missing from it:
 
 - Event title and description.
@@ -68,7 +72,7 @@ Save imports as `documentation/events/YYYY-MM-DD_event-slug.ics` when needed, an
 
 To import on a computer, open Google Calendar and go to **Settings → Import & export**. Select the `.ics` file, choose the **shared community calendar** as the destination, and import. Check the resulting title, dates, time, location, and links. Google defaults to the primary calendar, so select the destination deliberately. Importing is a one-time transfer; subsequent edits should be made in the destination calendar. See [Google's import instructions](https://support.google.com/calendar/answer/37118?hl=en).
 
-Direct event creation requires verified calendar write access through a connected integration or an authorised browser session. Check the available capabilities and the target calendar before using that route; a public embed or subscription URL does not grant editing permission.
+An ICS import is the default handoff. A public embed or subscription URL does not grant editing permission; David or another trusted calendar editor chooses the destination and performs the import.
 
 ## Website maintenance
 
