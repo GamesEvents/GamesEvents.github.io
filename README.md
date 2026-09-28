@@ -10,9 +10,9 @@ The design is deliberately simple: **“3 iframes in a trenchcoat”** — two G
 
 Read this README and the diaries in [`documentation/`](documentation/) before changing the project. The initial repository review and decisions are in [`documentation/2026-09-29_diary.md`](documentation/2026-09-29_diary.md).
 
-For event work, read the [calendar formatting guide](documentation/event-formatting.md) and [2026 festival research notes](documentation/2026-festival-research.md). The [festival shortlist CSV](documentation/events/2026-festival-shortlist.csv) records timings, sources, and matches against the [supplied calendar export](documentation/aus_games_events_2026-09-26.ics).
+For event work, start with the [website-to-ICS workflow](documentation/event-workflow.md), then read the [calendar formatting guide](documentation/event-formatting.md) and [current import queue](ics/README.md). These documents provide the selection preferences, research steps, duplicate checks, formatting, validation and upload/archive handoff without needing conversation history. The [2026 festival research](documentation/2026-festival-research.md) and [shortlist CSV](documentation/events/2026-festival-shortlist.csv) are worked examples.
 
-Prepared imports live in [`ics/`](ics/). Its [batch index](ics/README.md) lists the new events and the existing events that were skipped.
+Prepared imports awaiting upload live in [`ics/`](ics/). Old/already-uploaded files live in [`ics/archive/`](ics/archive/) and must be checked to avoid regenerating processed occurrences. The [historical festival manifest](documentation/events/2026-festival-imports.md) links the archived files and records the skipped events. The original September 26 full-calendar export is no longer in the checkout; obtain a fresh snapshot for complete duplicate coverage.
 
 **`docs/` is the public website directory. Write documentation in `documentation/`.** This project overrides the usual convention of putting agent diaries and plans in `docs/`.
 
@@ -32,7 +32,8 @@ Prepared imports live in [`ics/`](ics/). Its [batch index](ics/README.md) lists 
 | [`docs/js/scripts.js`](docs/js/scripts.js) | Navigation behaviour: shrinking navbar, scrollspy, and mobile menu collapse. |
 | [`docs/assets/`](docs/assets/) | Public favicon, social preview image, and Merry H's event-board image. |
 | [`documentation/`](documentation/) | Maintainer notes, decisions, dated diaries, research CSVs, and supplied calendar exports. |
-| [`ics/`](ics/) | Prepared event imports, with a batch index and import status. |
+| [`ics/`](ics/) | Pending event imports, with a current queue and upload status. |
+| [`ics/archive/`](ics/archive/) | Old/already-uploaded files, used as processed history and formatting examples. |
 | [`package.json`](package.json) | Minimal package metadata; no dependencies or build scripts. |
 | [`LICENSE`](LICENSE) | MIT licence with the upstream Start Bootstrap notice. |
 
@@ -59,7 +60,11 @@ If the shared calendar changes, update both iframe sources, the subscription lin
 
 ## Preparing events with an agent
 
-David's preferred workflow is to prepare files for manual import. No plugins or Calendar API setup are required. Start with a research CSV when discovering events, then produce ICS files for selected events using the formatting guide and a recent calendar export to avoid duplicates. Prioritise developer learning, networking, creation, and playtesting; exclude consumer-focused events and long-running exhibitions.
+David's preferred workflow is to prepare files for manual import. No plugins or Calendar API setup are required. Follow the [event workflow](documentation/event-workflow.md) when given one event page, multiple websites, or an aggregator. Research and record the facts, check pending imports, archived occurrences and a recent complete calendar export, then produce ICS for eligible new events. Prioritise developer learning, networking, creation, and playtesting; exclude consumer-focused events and long-running exhibitions.
+
+A sufficient request for a fresh agent is:
+
+> Read README and `documentation/event-workflow.md`. Research upcoming Australian game-development events at these URLs: [paste links]. Prepare validated ICS files for eligible new events in `ics/`, skipping existing and processed occurrences, and update the research record and import queue.
 
 An agent can prepare a downloadable `.ics` file for one event or a batch without Google account access or changes to the website. Provide an event announcement or source link, plus any details missing from it:
 
@@ -76,6 +81,8 @@ Save imports as `ics/YYYY-MM-DD_state_event-slug.ics`, and record what was prepa
 To import on a computer, open Google Calendar and go to **Settings → Import & export**. Select the `.ics` file, choose the **shared community calendar** as the destination, and import. Check the resulting title, dates, time, location, and links. Google defaults to the primary calendar, so select the destination deliberately. Importing is a one-time transfer; subsequent edits should be made in the destination calendar. See [Google's import instructions](https://support.google.com/calendar/answer/37118?hl=en).
 
 An ICS import is the default handoff. A public embed or subscription URL does not grant editing permission; David or another trusted calendar editor chooses the destination and performs the import.
+
+After David confirms upload or moves files to `ics/archive/`, update the pending queue, retain the batch manifest under `documentation/events/`, and record the processing status in the diary. Distinguish historical exports or drafts from confirmed imports where known. Do not regenerate a matching archived occurrence or assume that the archive is a complete live-calendar snapshot.
 
 ## Website maintenance
 

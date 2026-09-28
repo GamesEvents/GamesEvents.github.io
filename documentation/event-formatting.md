@@ -1,6 +1,8 @@
 # Calendar event formatting
 
-Reference: [`aus_games_events_2026-09-26.ics`](aus_games_events_2026-09-26.ics), supplied by David. Reviewed on 29 September 2026 by unfolding its lines and parsing the VEVENT records offline. The export contains 359 records; these include recurring masters and exceptions, so this is not a count of calendar occurrences.
+Historical reference: `aus_games_events_2026-09-26.ics`, supplied by David and reviewed on 29 September 2026 by unfolding its lines and parsing the VEVENT records offline. That full-calendar export is no longer in the checkout. Its 359 records included recurring masters and exceptions, so this was not a count of calendar occurrences. The observations below preserve the formatting evidence; [archived generated events](events/2026-festival-imports.md) provide accessible examples.
+
+For the full research-to-import process, start with [event-workflow.md](event-workflow.md).
 
 ## What the existing calendar does
 
@@ -52,7 +54,7 @@ The export shows rich text stored inside Google's DESCRIPTION values, but that d
 
 ## Avoiding duplicate imports
 
-Compare the event name, source link, local date/time, and location against a recent calendar export. Inspect RRULE, EXDATE, RDATE, and RECURRENCE-ID before deciding whether a recurring occurrence is present. A matching series title is not enough.
+Compare the event name, source link, local date/time, and location against pending `ics/` files, processed `ics/archive/` files, and a recent complete calendar export. Matching archived occurrences must not be regenerated. Deduplicate individual and combined archive records by UID; a prepared batch is not a complete calendar snapshot. Inspect RRULE, EXDATE, RDATE, and RECURRENCE-ID before deciding whether a recurring occurrence is present. A matching series title is not enough.
 
 Two specific findings in the September export demonstrate why:
 
@@ -77,4 +79,4 @@ Use [RFC 5545](https://www.rfc-editor.org/rfc/rfc5545) for serialization, separa
 
 When sampling a large export, unfold continuation lines before interpreting properties. Read a bounded selection of SUMMARY, DESCRIPTION, LOCATION, date, and recurrence fields rather than printing the entire file.
 
-Save prepared files under the repository's root [`ics/`](../ics/) directory. Keep research and formatting documentation here in `documentation/`; `docs/` remains the public website.
+Save prepared files under the repository's root [`ics/`](../ics/) directory and update its pending queue. David moves old/already-uploaded files to [`ics/archive/`](../ics/archive/); preserve their UIDs and update status/links when that happens. Keep research, historical manifests and formatting documentation here in `documentation/`; `docs/` remains the public website.

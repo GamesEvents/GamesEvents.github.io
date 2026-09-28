@@ -1,6 +1,6 @@
 # 2026 festival event research
 
-Checked on 29 September 2026. The shortlist is [`events/2026-festival-shortlist.csv`](events/2026-festival-shortlist.csv). It is research input, not a Google Calendar import CSV. The approved imports are now in [`../ics/`](../ics/): [batch index](../ics/README.md) and [combined import](../ics/2026-festival-new-events.ics). Live import has not been confirmed.
+Checked on 29 September 2026. The shortlist is [`events/2026-festival-shortlist.csv`](events/2026-festival-shortlist.csv). It is research input, not a Google Calendar import CSV. David has moved the generated files into `ics/archive/` as old/already-uploaded history: [historical batch manifest](events/2026-festival-imports.md) and [archived combined file](../ics/archive/2026-festival-new-events.ics). They are excluded from the [pending queue](../ics/README.md). For new websites or aggregators, use [event-workflow.md](event-workflow.md).
 
 ## Scope and sources
 
@@ -33,7 +33,7 @@ This CSV deliberately preserves explicit offsets as text. Melbourne and Sydney a
 
 ## Existing-calendar statuses
 
-The downloaded export is the comparison baseline; no live calendar access was used.
+The downloaded September 26 export was the comparison baseline; no live calendar access was used. That original full-calendar file is no longer in the checkout. The statuses below describe the initial research; processed occurrences must now also be checked against `ics/archive/`.
 
 - `not_in_export`: no matching event for these dates was found in the supplied export.
 - `already_listed`: the exported event agrees with the selected attendance window.
@@ -72,8 +72,8 @@ The organiser page was rechecked during generation: its opening agenda remains 0
 
 ## Prepared batch and handoff
 
-Prepared 24 distinct new events as 24 individual files plus one combined 24-event import under root `ics/`. High Score and GCAP were combined as requested. Play Now uses a transparent date-only description; no attendance time or address was invented. Timed entries use the selected CSV offsets converted to UTC. The source CSV and supplied export remain unchanged.
+Prepared 24 distinct new events as 24 individual files plus one combined 24-event import under root `ics/`; David subsequently moved them to `ics/archive/` as old/already-uploaded history. High Score and GCAP were combined as requested. Play Now uses an explicit date-only description; no attendance time or address was invented. Timed entries use the selected CSV offsets converted to UTC. The source CSV was preserved; the original supplied export is now absent from the checkout.
 
 Skipped eight existing listings: Eye Candy launch, MASS Dev Day, Waypoint Constellations, Every Game Talk Possible, Making Waves, Parallels, Technically Games, and the related Playmakers Arcade series. Existing timing or recurrence issues are recorded above for direct calendar review, without generating duplicate correction events.
 
-Import the combined file once, or choose individual files; do not import both versions. Confirm the destination is the shared calendar and check the resulting dates, descriptions, links, and locations. Record import status in the active diary only after David or another editor confirms it. No plugin, API credentials, dependency installation, or website build is required for this file-based workflow.
+This batch is archived history and should not be regenerated or returned to the upload queue. For future batches, import the combined file or selected individual files, confirm the shared calendar destination, and record preparation and processing status in the diary and queue. No plugin, API credentials, dependency installation, or website build is required for this file-based workflow.
