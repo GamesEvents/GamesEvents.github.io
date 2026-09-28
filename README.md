@@ -56,7 +56,7 @@ There is no form-to-calendar automation in this repository. Maintainers should r
 
 Handing off day-to-day management means granting the appropriate Google Calendar and form access to trusted community leaders. Website access is needed only for changes to the page itself. Calendar access does not automatically grant form access.
 
-If the shared calendar changes, update both iframe sources, the subscription link, and the ICS export link in `docs/index.html`, along with this README. Update form links and embeds if their destinations change.
+If the shared calendar changes, update both iframe sources, the subscription link, and the ICS export link in `docs/index.html`, along with this README and any style trials still being compared. Update form links and embeds if their destinations change.
 
 ## Preparing events with an agent
 
@@ -87,6 +87,8 @@ After David confirms upload or moves files to `ics/archive/`, update the pending
 ## Website maintenance
 
 GitHub Pages serves `docs/` as the website root. There is no compilation or package-install step. The page loads Bootstrap JavaScript, Font Awesome, Google Fonts, Google Analytics, and a Start Bootstrap forms script from external services; the main theme CSS and navigation JavaScript are local.
+
+Three complete static alternatives are available for comparison: [Community Noticeboard](docs/index_style_1.html), [Studio Workbench](docs/index_style_2.html), and [Festival Field Guide](docs/index_style_3.html). Read [the detailed style proposals](documentation/style_proposals.md) for their visual direction, behaviour, trade-offs and trial/adoption steps. Each alternative uses inline CSS/JavaScript, system fonts and the existing assets, so the selected HTML can replace `index.html` without a build or framework. The current index remains in place until David chooses a winner.
 
 For website changes, review the page at desktop and mobile widths, check navigation and subscription links, and verify the two calendar views and submission form. A local preview should serve `docs/` as its root because some asset links use absolute paths. Google embeds and CDN resources require an internet connection.
 

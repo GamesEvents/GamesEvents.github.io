@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find Australian game-development talks, workshops, playtests and meetups. Subscribe to the community calendar or submit an event.">
+  <title>Australian GameDev Events — Studio Workbench</title>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://gamesevents.github.io/assets/gamedev_preview.jpeg">
+  <meta name="twitter:description" content="Calendar for Australian Game Developer Events. Submit and subscribe to events on this page.">
+  <meta name="twitter:creator" content="@frostickle">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Australian GameDev Events">
+  <meta property="og:description" content="Calendar for Australian Game Developer Events. Submit and subscribe to events on this page.">
+  <meta property="og:image" content="https://gamesevents.github.io/assets/gamedev_preview.jpeg">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <!-- Style 2: Studio Workbench. Standalone static alternative; no build step. -->
+  <style>
+    /* This file is self-contained: palette, layout and responsive rules. */
+    :root {
+      --page: #171b20;
+      --surface: #222932;
+      --ink: #f2f0e8;
+      --muted: #b9c3cf;
+      --accent: #f0c560;
+      --action-ink: #171b20;
+      --line: #48525e;
+      --focus: #f0c560;
+      color-scheme: dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--page);
+      font-synthesis: none;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    body { margin: 0; font-size: 1rem; line-height: 1.6; }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-size: clamp(2rem, 4.5vw, 3.6rem); line-height: 1.06; letter-spacing: -.035em; }
+    h2 { font-size: 1.6rem; line-height: 1.25; letter-spacing: -.02em; }
+    h3 { font-size: 1.05rem; line-height: 1.35; }
+    p + p { margin-top: 1rem; }
+    a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: .2em; }
+    a:hover { text-decoration-thickness: 2px; }
+    a, button, summary { -webkit-tap-highlight-color: transparent; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+    button { font: inherit; }
+    img { display: block; max-width: 100%; height: auto; }
+    .wrap { width: min(100% - 3rem, 78rem); margin-inline: auto; }
+    .skip-link { position: fixed; z-index: 10; inset: .5rem auto auto .5rem; padding: .7rem 1rem; background: var(--surface); transform: translateY(-160%); }
+    .skip-link:focus { transform: translateY(0); }
+    .site-header { border-bottom: 1px solid var(--line); }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem 2rem; padding-block: 1.25rem; }
+    .brand { display: flex; gap: .7rem; align-items: center; color: var(--ink); font-size: 1rem; font-weight: 750; text-decoration: none; }
+    .brand-mark { display: grid; place-items: center; width: 2.4rem; height: 2.4rem; background: var(--accent); color: var(--action-ink); font-size: .8rem; font-weight: 800; }
+    .site-nav { display: flex; flex-wrap: wrap; gap: .25rem 1rem; }
+    .site-nav a { padding-block: .5rem; color: var(--ink); font-size: .9rem; text-decoration: none; }
+    .site-nav a:hover { text-decoration: underline; }
+    .hero { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(16rem, .8fr); gap: 2.5rem; align-items: center; padding-block: 3rem; }
+    .hero-copy p { max-width: 42rem; margin-top: 1.2rem; color: var(--muted); font-size: 1.1rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; align-content: center; }
+    .button { display: inline-flex; justify-content: center; align-items: center; min-height: 2.8rem; padding: .65rem 1rem; border: 1px solid var(--accent); border-radius: 2px; color: var(--accent); background: transparent; font-weight: 650; text-decoration: none; line-height: 1.35; }
+    .button:hover { text-decoration: underline; }
+    .button-primary { background: var(--accent); color: var(--action-ink); }
+    .hero-actions .button-primary { width: 100%; }
+    .text-action { display: inline-block; padding-block: .5rem; }
+    .section { padding-block: 2.8rem; border-top: 1px solid var(--line); scroll-margin-top: 1rem; }
+    .section-heading { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; }
+    .section-heading p { color: var(--muted); margin-top: .45rem; }
+    .view-controls { display: flex; flex-wrap: wrap; gap: .4rem; }
+    .view-controls button { min-height: 2.8rem; padding: .6rem .9rem; border: 1px solid var(--line); border-radius: 2px; background: var(--surface); color: var(--ink); cursor: pointer; }
+    .view-controls button:hover { border-color: var(--accent); }
+    .view-controls button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent); color: var(--action-ink); }
+    .calendar-layout { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.75fr); align-items: start; gap: 1rem; }
+    .calendar-layout[data-view="agenda"], .calendar-layout[data-view="month"] { grid-template-columns: minmax(0, 1fr); }
+    .calendar-panel { min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 2px; overflow: hidden; }
+    .panel-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .8rem 1rem; border-bottom: 1px solid var(--line); }
+    .panel-header p { color: var(--muted); font-size: .8rem; }
+    .embed-scroll { overflow-x: auto; background: #fff; color-scheme: light; }
+    iframe { display: block; width: 100%; height: 40rem; border: 0; background: #fff; color-scheme: light; }
+    .month-panel iframe { min-width: 38rem; }
+    .calendar-footnote { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; margin-top: 1rem; font-size: .88rem; color: var(--muted); }
+    .resource-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2.5rem; }
+    .resource-group > h3 { margin-bottom: .8rem; }
+    .resource-list { list-style: none; padding: 0; margin: 0; }
+    .resource-list li { padding-block: .8rem; border-top: 1px solid var(--line); }
+    .resource-list li:last-child { border-bottom: 1px solid var(--line); }
+    .resource-list a { font-weight: 650; }
+    .resource-list p { margin-top: .25rem; font-size: .92rem; color: var(--muted); }
+    .resource-list .extra-link { font-weight: 400; font-size: .85rem; }
+    .about-layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 2.5rem; }
+    .about-layout > div { min-width: 0; }
+    .about-layout p { max-width: 42rem; }
+    .about-note { padding: 1.3rem; border-left: 3px solid var(--accent); background: var(--surface); }
+    .about-note h3 { margin-bottom: .6rem; }
+    .submit-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+    .submit-intro p { max-width: 40rem; color: var(--muted); }
+    .submit-intro .text-action { margin-top: .7rem; }
+    .form-frame { min-width: 0; border: 1px solid var(--line); background: #fff; border-radius: 2px; overflow: hidden; }
+    .form-frame iframe { height: 58rem; }
+    .board-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 2.5rem; align-items: start; }
+    .board-copy p { margin-block: 1rem; color: var(--muted); }
+    .board-image { display: block; border: 1px solid var(--line); }
+    .board-image img { width: 100%; }
+    .site-footer { padding-block: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; }
+    .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; }
+    @media (max-width: 50rem) {
+      .wrap { width: min(100% - 2rem, 78rem); }
+      .hero { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; padding-block: 2rem; }
+      .hero-actions { max-width: 36rem; }
+      .hero-actions .button-primary { width: auto; }
+      .calendar-layout { grid-template-columns: minmax(0, 1fr); }
+      .resource-layout, .about-layout, .board-layout { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+      .section { padding-block: 2rem; }
+      .section-heading { align-items: start; }
+      .section-heading > div:first-child { width: 100%; }
+      .calendar-footnote { flex-direction: column; }
+      iframe { height: 34rem; }
+      .panel-header { padding: .7rem .8rem; }
+      .form-frame iframe { height: 60rem; }
+      .board-image { max-width: 42rem; }
+    }
+    @media (max-width: 25rem) {
+      .wrap { width: calc(100% - 1.5rem); }
+      .brand { font-size: .9rem; gap: .5rem; }
+      .site-nav { gap: .2rem .8rem; }
+      .hero-actions { gap: .55rem; }
+      .view-controls { width: 100%; }
+      .view-controls button { flex: 1; padding-inline: .65rem; }
+    }
+    @media print {
+      .site-header, .view-controls, .hero-actions, .form-frame { display: none; }
+      .wrap { width: 100%; }
+      body { background: #fff; color: #000; }
+      .calendar-panel { break-inside: avoid; }
+    }
+
+    /* Studio Workbench: compact labels and a month-first calendar. */
+    .site-header { border-top: 3px solid var(--accent); background: var(--surface); }
+    .brand, .site-nav, .view-controls, .panel-header, .resource-group > h3 { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; }
+    .brand-mark { background: transparent; border: 2px solid var(--accent); color: var(--accent); }
+    .hero { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding-block: 2.3rem; }
+    h1 { font-size: clamp(2rem, 4vw, 3rem); }
+    .hero-copy p { max-width: 48rem; font-size: 1rem; margin-top: .85rem; }
+    .hero-actions { align-items: center; }
+    .hero-actions .button-primary { width: auto; }
+    .section { padding-block: 2rem; }
+    .section-heading h2 { font-size: 1.35rem; }
+    .section-heading p { font-size: .92rem; }
+    .calendar-layout { grid-template-columns: minmax(0, 1.8fr) minmax(0, .8fr); gap: .75rem; }
+    .panel-header { padding-block: .65rem; }
+    .panel-header h3 { font-size: .95rem; }
+    .resource-list li { padding-block: .65rem; }
+    .about-note { border-top: 1px solid var(--line); border-left: 2px solid var(--accent); }
+    .submit-layout { grid-template-columns: minmax(0, .65fr) minmax(0, 1.5fr); gap: 2rem; }
+    .submit-intro { position: sticky; top: 1rem; align-self: start; }
+    @media (max-width: 50rem) {
+      .hero { padding-block: 1.75rem; }
+      .calendar-layout, .submit-layout { grid-template-columns: minmax(0, 1fr); }
+      .submit-intro { position: static; }
+      .panel-header p { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+    }
+  </style>
+  <!-- Retain the existing site's Google Analytics identifier. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWQYLQZ19S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-CWQYLQZ19S');
+  </script>
+</head>
+<body class="workbench" id="page-top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#page-top"><span class="brand-mark" aria-hidden="true">AU</span><span>Australian<br>GameDev Events</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#calendar">Calendar</a>
+        <a href="#MIGW">Useful links</a>
+        <a href="#about">About</a>
+        <a href="#submit">Submit an event</a>
+      </nav>
+
+    </div>
+  </header>
+  <main class="wrap" id="main">
+    <section class="hero" aria-labelledby="intro-heading">
+      <div class="hero-copy">
+        <h1 id="intro-heading">What's on in<br>Australian GameDev.</h1>
+        <p>Plan a conference, find a playtest, or catch up with other developers. Keep the community calendar close to hand.</p>
+      </div>
+      <div class="hero-actions" aria-label="Calendar subscription options">
+        <a class="button button-primary" href="https://calendar.google.com/calendar/u/0/r?cid=e6f886bb015fd0782baab1c0a6779bec705be80e0ea616b61d91a55faddc522e@group.calendar.google.com">Subscribe in Google Calendar</a>
+        <a class="button" href="https://calendar.google.com/calendar/ical/e6f886bb015fd0782baab1c0a6779bec705be80e0ea616b61d91a55faddc522e%40group.calendar.google.com/public/basic.ics">Download ICS</a>
+        <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSc1R7Q0sn3e5eLz0vadkuTnH1SX8uOyd-V4yt2mp5KMw_K9lA/viewform">Join the mailing list</a>
+      </div>
+    </section>
+
+    <section class="section" id="calendar" aria-labelledby="calendar-heading">
+      <div class="section-heading">
+        <div>
+          <h2 id="calendar-heading">The community calendar</h2>
+          <p>Find a date that works, then open an event for the details.</p>
+        </div>
+        <div class="view-controls" id="calendar-controls" role="group" aria-label="Calendar view" hidden>
+          <button type="button" data-view="agenda" aria-controls="calendar-layout" aria-pressed="false">Upcoming</button>
+          <button type="button" data-view="month" aria-controls="calendar-layout" aria-pressed="false">Month</button>
+          <button type="button" data-view="both" aria-controls="calendar-layout" aria-pressed="true">Both views</button>
+        </div>
+      </div>
+      <div class="calendar-layout" id="calendar-layout" data-view="both">
+        <section class="calendar-panel month-panel" id="month-panel" aria-labelledby="month-heading">
+          <header class="panel-header">
+            <h3 id="month-heading">Month calendar</h3>
+            <p>Sydney time</p>
+          </header>
+          <div class="embed-scroll">
+            <iframe title="Australian GameDev events — month calendar" src="https://calendar.google.com/calendar/embed?src=e6f886bb015fd0782baab1c0a6779bec705be80e0ea616b61d91a55faddc522e%40group.calendar.google.com&amp;ctz=Australia%2FSydney" width="800" height="640"></iframe>
+          </div>
+        </section>
+        <section class="calendar-panel agenda-panel" id="agenda-panel" aria-labelledby="agenda-heading">
+          <header class="panel-header">
+            <h3 id="agenda-heading">Upcoming events</h3>
+            <p>Sydney time</p>
+          </header>
+          <div class="embed-scroll">
+            <iframe title="Australian GameDev events — upcoming agenda" src="https://calendar.google.com/calendar/embed?src=e6f886bb015fd0782baab1c0a6779bec705be80e0ea616b61d91a55faddc522e%40group.calendar.google.com&amp;ctz=Australia%2FSydney&amp;mode=AGENDA" width="800" height="640"></iframe>
+          </div>
+        </section>
+      </div>
+      <div class="calendar-footnote">
+        <p>Calendar times are displayed in Australia/Sydney.</p>
+        <a target="_blank" rel="noopener noreferrer" href="https://calendar.google.com/calendar/embed?src=e6f886bb015fd0782baab1c0a6779bec705be80e0ea616b61d91a55faddc522e%40group.calendar.google.com&amp;ctz=Australia%2FSydney">Open calendar in Google Calendar</a>
+      </div>
+    </section>
+
+    <section class="section" id="MIGW" aria-labelledby="links-heading">
+      <div class="section-heading">
+        <div>
+          <h2 id="links-heading">Useful links</h2>
+          <p>Explore festival programs and meet the wider games community.</p>
+        </div>
+      </div>
+      <div class="resource-layout">
+        <div class="resource-group">
+          <h3>Festival programs &amp; guides</h3>
+          <ul class="resource-list">
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://gamesweek.melbourne/">Melbourne International Games Week</a>
+            <p>Explore the official MIGW program and industry events.</p>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://sydneygamesfestival.org/program/">Sydney Games Festival</a>
+            <p>Find the festival program, developer gatherings and playtests.</p>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.screenhub.com.au/news/industry-news/migw-2026-event-guide-2708471/">MIGW 2026 guide — ScreenHub</a>
+            <p>Read an overview of the major Games Week events.</p>
+          </li>
+          </ul>
+        </div>
+        <div class="resource-group">
+          <h3>Community, spaces &amp; opportunities</h3>
+          <ul class="resource-list">
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.gameworkers.com.au/">Game Workers Australia</a>
+            <p>The workers union for people in the Australian games industry.</p>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/jRn9FMz">Game Developers of Australia</a>
+            <p>Connect with the Australian GameDev community on Discord.</p>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/groups/igdam/">IGDA Melbourne</a>
+            <p>Find the local developer community on Facebook.</p>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.tsumea.com/">tsumea</a>
+            <p>Game-development jobs and community news.</p>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://sabby.gallery/">Sabby</a>
+            <p>A Melbourne GameDev community space for coworking and events.</p>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://serenade.games/">Serenade</a>
+            <p>Popup events for personal and experimental games and interactive work.</p>
+            <a class="extra-link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/serenadegames/">Serenade on Instagram</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" href="https://indiedigest.dev/">Indie Digest</a>
+            <p>A weekly newsletter for indie game developers.</p>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="section-heading"><h2 id="about-heading">Made for the community</h2></div>
+      <div class="about-layout">
+        <div>
+          <p>We made this website because we're sick of finding out about GameDev events after they happen.</p>
+          <p>This calendar brings together Australian game-development talks, workshops, professional gatherings and prototype playtests. Subscribe to keep the events alongside your own plans.</p>
+          <p>Join the <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/TrsqUQre">Game Developers of Australia Discord</a> to find out more.</p>
+        </div>
+        <div class="about-note">
+          <h3>Know of an event?</h3>
+          <p>If an Australian GameDev event is missing, <a href="#submit">submit it below</a> or contact <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/frostickle">@frostickle</a>.</p>
+          <p>Include the date, location and an organiser link so people can find the information they need.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="submit" aria-labelledby="submit-heading">
+      <div class="section-heading"><h2 id="submit-heading">Submit an event</h2></div>
+      <div class="submit-layout">
+        <div class="submit-intro">
+          <p>Help other game makers find their next gathering. Send through a talk, workshop, industry meetup or playtest for the community calendar.</p>
+          <a class="text-action" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSeQmiwTdEI2wugkm4QHZqBi1TUiC0ahSbMNWVGbHEg2G5qO6Q/viewform">Open the submission form in a new tab</a>
+        </div>
+        <div class="form-frame">
+          <iframe title="Submit an Australian game-development event" src="https://docs.google.com/forms/d/e/1FAIpQLSeQmiwTdEI2wugkm4QHZqBi1TUiC0ahSbMNWVGbHEg2G5qO6Q/viewform" width="800" height="928" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="merryhprojects" aria-labelledby="board-heading">
+      <div class="board-layout">
+        <div class="board-copy">
+          <h2 id="board-heading">More events from Merry H</h2>
+          <p>Merry H keeps another community event board. Take a look for more gatherings and ways to connect.</p>
+          <a class="text-action" target="_blank" rel="noopener noreferrer" href="https://merryhprojects.notion.site/951bf21c383f4edfaf17f0abc0d89e71?v=1e8a44c7909b4d51afa5b122d9544aa3">Visit Merry H’s Notion event board</a>
+        </div>
+        <a class="board-image" target="_blank" rel="noopener noreferrer" href="https://merryhprojects.notion.site/951bf21c383f4edfaf17f0abc0d89e71?v=1e8a44c7909b4d51afa5b122d9544aa3"><img src="assets/merryh.png" alt="Preview of Merry H’s community event board" loading="lazy" decoding="async"></a>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap site-footer">
+    <div class="footer-inner">
+      <p>Australian GameDev Events · A community calendar.</p>
+      <p>Copyright &copy; <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/frostickle">David Ma</a> · <a href="#page-top">Back to top</a></p>
+    </div>
+  </footer>
+  <script>
+    // Progressive enhancement: without JavaScript both Google views stay visible.
+    (() => {
+      const controls = document.getElementById('calendar-controls');
+      const layout = document.getElementById('calendar-layout');
+      const agenda = document.getElementById('agenda-panel');
+      const month = document.getElementById('month-panel');
+      const buttons = controls.querySelectorAll('button[data-view]');
+      const narrow = window.matchMedia('(max-width: 50rem)');
+      let chosenByVisitor = false;
+
+      function showView(view) {
+        if (!['agenda', 'month', 'both'].includes(view)) return;
+        layout.dataset.view = view;
+        agenda.hidden = view === 'month';
+        month.hidden = view === 'agenda';
+        buttons.forEach(button => {
+          button.setAttribute('aria-pressed', String(button.dataset.view === view));
+        });
+      }
+
+      buttons.forEach(button => button.addEventListener('click', () => {
+        chosenByVisitor = true;
+        showView(button.dataset.view);
+      }));
+      showView(narrow.matches ? 'agenda' : 'both');
+      controls.hidden = false;
+      narrow.addEventListener('change', () => {
+        if (!chosenByVisitor) showView(narrow.matches ? 'agenda' : 'both');
+      });
+    })();
+  </script>
+</body>
+</html>
