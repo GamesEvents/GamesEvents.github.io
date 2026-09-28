@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:b78b4c71-a34b-552e-9e81-95328dd8b06d@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261014T073000Z
+DTEND:20261014T103000Z
+SUMMARY:NSW - Avant Harde Drive: Creative Tech Meetup
+DESCRIPTION:https://events.humanitix.com/avant-harde-drive-creative-tech-me
+ etup-sydney-games-festival\n\nCreative-technology talks and networking exp
+ loring games\, immersive work\, art\, and live performance.\n\nRegistratio
+ n: Free\, with limited capacity\; register via the event link.
+LOCATION:Knox Street Bar\, Garage 11 Knox Street\, Chippendale NSW 2008\, A
+ ustralia
+URL:https://events.humanitix.com/avant-harde-drive-creative-tech-meetup-syd
+ ney-games-festival
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

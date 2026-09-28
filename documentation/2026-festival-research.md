@@ -1,6 +1,6 @@
 # 2026 festival event research
 
-Checked on 29 September 2026. The shortlist is [`events/2026-festival-shortlist.csv`](events/2026-festival-shortlist.csv). It is research input for a later ICS batch, not a Google Calendar import CSV.
+Checked on 29 September 2026. The shortlist is [`events/2026-festival-shortlist.csv`](events/2026-festival-shortlist.csv). It is research input, not a Google Calendar import CSV. The approved imports are now in [`../ics/`](../ics/): [batch index](../ics/README.md) and [combined import](../ics/2026-festival-new-events.ics). Live import has not been confirmed.
 
 ## Scope and sources
 
@@ -8,7 +8,7 @@ Reviewed [Melbourne International Games Week's industry program](https://gameswe
 
 The shortlist covers developer conferences, technical and creative talks, careers, beginner creation workshops, industry networking, a game-jam launch, and playtesting. Ordinary board-game sessions, tournaments, concerts, consumer expos, and long-running exhibitions were excluded. DevCon qualifies as a tabletop **creator** event with talks and prototype feedback. Waypoint qualifies through developer storytelling and playable creator work. Making Waves qualifies through audio-development commentary, workshops, and networking.
 
-High Score has two daily rows and GCAP has three, using the festival's published daily attendance windows. These represent each conference day, not every talk. Recheck the detailed timetable before ICS generation. The broad festival placeholders already in the calendar were not added to this shortlist.
+The research CSV retains two daily rows for High Score and three for GCAP, using the festival's published daily attendance windows. David subsequently requested a single multi-day all-day entry for each conference: High Score on 3–4 October and GCAP on 5–7 October. The generated ICS files follow that decision, with practical daily hours in their descriptions. The broad festival placeholders already in the calendar were not added to this shortlist.
 
 ## CSV fields
 
@@ -41,7 +41,7 @@ The downloaded export is the comparison baseline; no live calendar access was us
 - `recurrence_excluded`: an existing recurring series explicitly removes this date. For Beer and Pixels, the festival occurrence may need a separate entry after checking the current calendar.
 - `related_series_review`: a related series exists, but its recurrence does not describe this dated event correctly. Review before import.
 
-For prospective ICS generation, skip `already_listed` entries. Review the two correction statuses, all source conflicts, and the date-only row. `not_in_export` is not proof that somebody has not added the event since September 26.
+For this batch, skip `already_listed`, `existing_time_differs`, and `related_series_review` entries, following David's request to skip existing events. Include the explicitly excluded Beer and Pixels occurrence as a new one-off event. The selected organiser times are retained for new entries with source conflicts. `not_in_export` is not proof that somebody has not added the event since September 26.
 
 ## Specific timing and duplication findings
 
@@ -53,7 +53,7 @@ For prospective ICS generation, skip `already_listed` entries. Review the two co
 | Parallels | [Festival running order](https://gamesweek.melbourne/events/industry-events/freeplays-parallels) and [organiser running order](https://events.humanitix.com/parallels-2026) finish at 22:30; the ticket header and export end at 23:00. CSV represents doors at 19:00 through the show end at 22:30 and flags both the source conflict and export difference. The 22:30 afterparty is separate. |
 | Technically Games | Festival lists 17:30–22:00 on 10 October; export has 17:30–21:30. CSV uses the festival time and marks an existing-event correction candidate. |
 | Every Game Talk Possible | [Organiser ticket page and stream timetable](https://events.humanitix.com/egtp-2026) support 12:00–20:00, agreeing with the export. Sydney festival schedule says 19:30. CSV retains 20:00 and flags the source conflict; this is not a new event. |
-| Play Now | Festival publishes 8 October with a default midnight header but no actual attendance hours. CSV leaves datetimes/duration blank and records the date in notes. Invitation-only; submissions are closed. |
+| Play Now | Festival publishes 8 October with a default midnight header but no actual attendance hours. [VicScreen's official page](https://vicscreen.vic.gov.au/playnow/) also confirms 8 October 2026 without hours or venue. CSV leaves datetimes/duration blank; the approved batch includes a date-only entry that explicitly says hours and venue are unpublished. Invitation-only; submissions are closed. |
 | Megadev | Festival body says “Late”, but [the organiser explicitly says midnight](https://eventhost.au/-/megadev-2026/about). CSV ends at 00:00 on 12 October. |
 | Beer and Pixels | Festival publishes 13 October, 18:30–22:30. The export excludes the corresponding October occurrence from its existing monthly series. |
 | Playmakers Arcade | Live festival schedule publishes 14 October, 17:00–21:00 at UTS Startups. The export's festival-named series instead recurs on first Wednesdays, including 7 October; review this related series. |
@@ -64,6 +64,16 @@ All Play Day was excluded from the initial shortlist because the full event is a
 
 MASS Open House and broad showcases were omitted from this first pass: they describe drop-in space or general public gameplay rather than a focused developer session. No exhibition runs, festival-wide blocks, or consumer concerts were added. Event access requirements remain in notes so invitation-only or audience-restricted listings are not mistaken for open meetups.
 
-## Next step
+## Xsolla context
 
-Review the shortlist and resolve flagged attendance windows before generating an ICS batch for genuinely new entries. Use [`event-formatting.md`](event-formatting.md), preserve the original export, and record preparation/import status in the active diary. No plugin, API credentials, dependency installation, or website build is required for this file-based workflow.
+This event was discovered through [MIGW's Xsolla industry listing](https://gamesweek.melbourne/events/industry-events/xsolla-breakfast-meet-up), which links to the organiser RSVP page. [Xsolla's official site](https://xsolla.com/) identifies its video-game payments, web shops and other business tools for developers and publishers. The event description now explains that role and the breakfast's relevance to studio teams and industry partners, and includes both the company and MIGW links. Invitation confirmation is required; submitting an RSVP does not guarantee a place.
+
+The organiser page was rechecked during generation: its opening agenda remains 08:30–08:40 and breakfast/networking 08:40–10:00, while its small top block and MIGW still show 08:45. The approved research value of 08:30 is retained. Unrelated Cologne/2024 template content was ignored.
+
+## Prepared batch and handoff
+
+Prepared 24 distinct new events as 24 individual files plus one combined 24-event import under root `ics/`. High Score and GCAP were combined as requested. Play Now uses a transparent date-only description; no attendance time or address was invented. Timed entries use the selected CSV offsets converted to UTC. The source CSV and supplied export remain unchanged.
+
+Skipped eight existing listings: Eye Candy launch, MASS Dev Day, Waypoint Constellations, Every Game Talk Possible, Making Waves, Parallels, Technically Games, and the related Playmakers Arcade series. Existing timing or recurrence issues are recorded above for direct calendar review, without generating duplicate correction events.
+
+Import the combined file once, or choose individual files; do not import both versions. Confirm the destination is the shared calendar and check the resulting dates, descriptions, links, and locations. Record import status in the active diary only after David or another editor confirms it. No plugin, API credentials, dependency installation, or website build is required for this file-based workflow.

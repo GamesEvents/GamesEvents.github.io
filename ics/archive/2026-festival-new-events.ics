@@ -1,0 +1,380 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:022e40b2-5434-5542-b3bc-fc5cd45fff14@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261003T000000Z
+DTEND:20261003T070000Z
+SUMMARY:VIC - EMERGENT 2026
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/emergent-202
+ 6\n\nEmerging developers share practical experience through talks\, panels
+ \, and roundtables.
+LOCATION:South Melbourne Community Centre\, 1 Ferrars Pl\, South Melbourne 
+ VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/emergent-2026
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:b674411c-1d0d-5481-97f1-96f0e273e2d8@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261005
+SUMMARY:VIC - High Score 2026
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/high-score\n
+ \nGame-audio conference covering composition\, sound design\, production t
+ echniques\, and industry practice.\n\nConference dates: 3–4 October 2026
+ . Published daily attendance window: 9am–5pm\, Melbourne local time. See
+  the event link for the detailed timetable.
+LOCATION:ACMI\, Cinema 1 and other spaces\, Fed Square\, Melbourne VIC\, Au
+ stralia
+URL:https://gamesweek.melbourne/events/industry-events/high-score
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:94a65161-b955-5efb-939f-1caa643a9783@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261004T020000Z
+DTEND:20261004T060000Z
+SUMMARY:VIC - Taking Up Space Conference
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/taking-up-sp
+ ace-conference\n\nGame-industry talks and panels on teams\, creative pract
+ ice\, and underrepresented perspectives.\n\nAudience: The conference is op
+ en to everyone. The following networking event has separate eligibility an
+ d registration.
+LOCATION:ACMI\, Swinburne space\, Fed Square\, Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/taking-up-space-conf
+ erence
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:370672fb-f6ac-5de1-b986-a7cc811e27f1@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261004T060000Z
+DTEND:20261004T080000Z
+SUMMARY:VIC - Taking Up Space Networking Event
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/taking-up-sp
+ ace\n\nCatered networking for women and gender-diverse developers followin
+ g the conference.\n\nAudience: Women and gender-diverse game developers.\n
+ Registration: Required\; see the event link.
+LOCATION:ACMI\, Swinburne space\, Fed Square\, Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/taking-up-space
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:207be104-ae51-5b62-b6da-fb35614f8413@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261008
+SUMMARY:VIC - Games Connect Asia Pacific (GCAP) 2026
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/gcap\n\nProf
+ essional game-development conference with technical learning\, industry di
+ scussions\, and networking.\n\nConference dates: 5–7 October 2026. Publi
+ shed daily attendance window: 8am–5pm\, Melbourne local time. See the ev
+ ent link for the detailed timetable. The Australian Game Developer Awards 
+ on 7 October have a separate calendar entry.
+LOCATION:Melbourne Convention and Exhibition Centre\, Plenary and Level 1\,
+  Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/gcap
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:94e4322b-1fb1-5ed9-8d58-71e01dc93ea1@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261005T070000Z
+DTEND:20261005T110000Z
+SUMMARY:VIC - MIGW Women in Games Welcome
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/migw-women-i
+ n-games-welcome\n\nWelcome gathering connecting women across game developm
+ ent\, creative disciplines\, research\, and study.\n\nAudience: People who
+  self-identify as women working or studying across the games industry\; 18
+ +.\nRegistration: Email the organiser using the event page to request an i
+ nvitation.
+LOCATION:Yarra Botanica\, Southbank Promenade\, Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/migw-women-in-games-
+ welcome
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:493e9cc5-3da1-53c8-9a38-379320092f64@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261006T080000Z
+DTEND:20261006T110000Z
+SUMMARY:VIC - Interactive Narrative Social
+DESCRIPTION:https://gamesweek.melbourne/events/dlc/interactive-narrative-so
+ cial-collingwood\n\nConversation and networking for games writers\, narrat
+ ive designers\, and interactive storytellers.\n\nAustralian Writers Guild 
+ membership is not required.
+LOCATION:Trainscendence\, Rolling Stock Lane\, Unit 6/48 Easey St\, Colling
+ wood VIC\, Australia
+URL:https://gamesweek.melbourne/events/dlc/interactive-narrative-social-col
+ lingwood
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ab822bd6-581b-54fe-9a05-09e84444e3c6@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261005T213000Z
+DTEND:20261005T230000Z
+SUMMARY:VIC - Xsolla Breakfast Meetup 2026
+DESCRIPTION:https://events.xsolla.com/xsollabreakfastmeetupinmelbourne\n\nX
+ solla provides payments\, web shops and other business tools for video gam
+ e developers and publishers. This breakfast during GCAP brings studio team
+ s and industry partners together for business conversations and networking
+ .\n\nRegistration: RSVP required. Places are limited and registration does
+  not guarantee attendance\; Xsolla will confirm invitations before the eve
+ nt.\n\nAbout Xsolla: https://xsolla.com/\nMIGW industry listing: https://g
+ amesweek.melbourne/events/industry-events/xsolla-breakfast-meet-up
+LOCATION:The Boatbuilders Yard\, 23 South Wharf Promenade\, South Wharf VIC
+  3006\, Australia
+URL:https://events.xsolla.com/xsollabreakfastmeetupinmelbourne
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:50c761ce-5f41-5dfb-abd4-444e5ef77ddb@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261007T040000Z
+DTEND:20261007T070000Z
+SUMMARY:VIC - Australian Game Developer Awards 2026
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/australian-g
+ ame-developer-awards\n\nAustralian industry awards recognising achievement
+ s by game creators\, studios\, and individuals.\n\nAudience: 18+.\nRegistr
+ ation: Tickets required\; see the event link.
+LOCATION:Melbourne Convention and Exhibition Centre\, Plenary and Level 1\,
+  Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/australian-game-deve
+ loper-awards
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ba7c37a3-46da-57d6-8694-504ea6bbfa1c@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261006T220000Z
+DTEND:20261006T233000Z
+SUMMARY:VIC - Build 3D Worlds with Low Poly Art
+DESCRIPTION:https://gamesweek.melbourne/events/dlc/build-3d-worlds-with-low
+ -poly-art-moorabbin\n\nHands-on introduction to voxel modelling and creati
+ ng simple 3D assets for games.\n\nBeginner-friendly workshop with an onlin
+ e livestream option.\nRegistration: Required\; see the event link for in-p
+ erson and online participation details.
+LOCATION:Holmesglen Institute of TAFE\, 488 South Road\, Moorabbin VIC\, Au
+ stralia
+URL:https://gamesweek.melbourne/events/dlc/build-3d-worlds-with-low-poly-ar
+ t-moorabbin
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:780604c4-37e8-55d9-b9fa-575713650834@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261007T013000Z
+DTEND:20261007T030000Z
+SUMMARY:VIC - Create 3D Art for Games
+DESCRIPTION:https://gamesweek.melbourne/events/dlc/create-3d-art-for-games-
+ moorabbin\n\nHands-on introduction to modelling\, sculpting\, and making 3
+ D game assets.\n\nBeginner-friendly workshop with an online livestream opt
+ ion.\nRegistration: Required\; see the event link for in-person and online
+  participation details.
+LOCATION:Holmesglen Institute of TAFE\, 488 South Road\, Moorabbin VIC\, Au
+ stralia
+URL:https://gamesweek.melbourne/events/dlc/create-3d-art-for-games-moorabbi
+ n
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:6ba19726-2da5-56ea-a1e2-6f3de4c990eb@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261007T030000Z
+DTEND:20261007T043000Z
+SUMMARY:VIC - Design Your Own Game Levels
+DESCRIPTION:https://gamesweek.melbourne/events/dlc/design-your-own-game-lev
+ els-moorabbin\n\nPractical level-design workshop exploring layout\, player
+  movement\, scale\, and environmental storytelling.\n\nBeginner-friendly w
+ orkshop with an online livestream option.\nRegistration: Required\; see th
+ e event link for in-person and online participation details.
+LOCATION:Holmesglen Institute of TAFE\, 488 South Road\, Moorabbin VIC\, Au
+ stralia
+URL:https://gamesweek.melbourne/events/dlc/design-your-own-game-levels-moor
+ abbin
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:3ed3beaa-bd70-589b-91e8-b3e880583387@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261006T230000Z
+DTEND:20261007T070000Z
+SUMMARY:VIC - Games for Change Summit
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/games-for-ch
+ ange-summit\n\nTalks\, panels\, and keynotes connect developers with educa
+ tors and researchers making games for social impact.
+LOCATION:ACMI\, Cinema 2\, Fed Square\, Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/games-for-change-sum
+ mit
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ab7b3f25-c0a1-5d64-a901-c88e1a8b8b9b@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261006T233000Z
+DTEND:20261007T010000Z
+SUMMARY:VIC - Make Your First Indie Game
+DESCRIPTION:https://gamesweek.melbourne/events/dlc/make-your-first-indie-ga
+ me-moorabbin\n\nBeginner workshop on scenes\, interactions\, mechanics\, a
+ nd building a playable game prototype.\n\nBeginner-friendly workshop with 
+ an online livestream option.\nRegistration: Required\; see the event link 
+ for in-person and online participation details.
+LOCATION:Holmesglen Institute of TAFE\, 488 South Road\, Moorabbin VIC\, Au
+ stralia
+URL:https://gamesweek.melbourne/events/dlc/make-your-first-indie-game-moora
+ bbin
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:0a0e4340-6ad9-5ba5-a01c-c60778016bee@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261007T080000Z
+DTEND:20261007T120000Z
+SUMMARY:VIC - MASS Launch Party
+DESCRIPTION:https://events.humanitix.com/mass-launch-party\n\nIndustry gath
+ ering celebrating the launch of a co-working space for independent game de
+ velopers.\n\nAudience: Games industry attendees only.\nRegistration: See t
+ he organiser ticket page.
+LOCATION:MASS\, 120 Oxford St\, Collingwood VIC 3066\, Australia
+URL:https://events.humanitix.com/mass-launch-party
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:fad4eac7-35e5-5e3e-ba56-d15181fd2f63@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261007T070000Z
+DTEND:20261007T090000Z
+SUMMARY:VIC - The Design of DREDGE: Screening and Q&A
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/the-design-o
+ f-dredge-screening-q-and-a\n\nMaking-of documentary and developer Q&A expl
+ oring the design and development of DREDGE.
+LOCATION:ACMI\, Cinema 2\, Fed Square\, Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/the-design-of-dredge
+ -screening-q-and-a
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:64c027dc-2b08-5a3b-a5f5-2518bb5244d8@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261007T223000Z
+DTEND:20261008T040000Z
+SUMMARY:VIC - Careers + Frontiers: Education Symposium
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/careers-fron
+ tiers-education-symposium\n\nIndustry talks and developer networking for s
+ tudents and educators exploring games careers.
+LOCATION:ACMI\, Cinema 1\, Fed Square\, Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/careers-frontiers-ed
+ ucation-symposium
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:d59aa5db-373c-5d1f-9ec5-e59b1c936ceb@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261007T210000Z
+DTEND:20261007T230000Z
+SUMMARY:VIC - New Zealand Game Developers Breakfast
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/new-zealand-
+ game-developers-breakfast\n\nNetworking breakfast connecting attendees wit
+ h New Zealand developers and potential collaborators.\n\nRegistration: Inv
+ itation-only. Email the organiser using the event page to request an invit
+ ation.
+LOCATION:Cargo Hall\, Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/new-zealand-game-dev
+ elopers-breakfast
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:7a7b8a58-58dc-5602-ab33-adf0a809a02c@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:VIC - Play Now Melbourne 2026
+DESCRIPTION:https://vicscreen.vic.gov.au/playnow/\n\nBusiness market where 
+ selected developers pitch games to publishers\, investors\, and platform h
+ olders.\n\nConfirmed date: Thursday 8 October 2026. This is a date-only li
+ sting\; attendance hours and the venue have not been published on the revi
+ ewed public pages.\nAudience: Invited teams with games in active developme
+ nt. Expressions of interest are closed.\n\nOrganiser information: https://
+ vicscreen.vic.gov.au/playnow/
+URL:https://vicscreen.vic.gov.au/playnow/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:3d0f2f78-b5e3-5c00-a206-558c64a8395a@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261008T053000Z
+DTEND:20261008T113000Z
+SUMMARY:VIC - TGDA Presents: DevCon 2026
+DESCRIPTION:https://events.humanitix.com/tgda-devcon-2026\n\nTabletop devel
+ oper talks\, panels\, prototype playtesting\, and networking with designer
+ s and publishers.
+LOCATION:The Mission to Seafarers Victoria\, 717 Flinders St\, Docklands VI
+ C\, Australia
+URL:https://events.humanitix.com/tgda-devcon-2026
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:d12c7581-3ed5-52b1-a128-7d552117946e@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261009T000000Z
+DTEND:20261009T030000Z
+SUMMARY:VIC - IGDA Foundation: Resume Review and Mixer
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/igda-foundat
+ ion-resume-review-and-mixer\n\nIndustry networking and one-to-one portfoli
+ o or resume feedback for game-development careers.\n\nRegistration: Book a
+ n expert review session via the event page. Individual reviews are 15 minu
+ tes within the 11am–2pm event window.
+LOCATION:MASS\, 120 Oxford St\, Collingwood VIC 3066\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/igda-foundation-resu
+ me-review-and-mixer
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:af4dcc62-9f94-5c08-9a00-99b2ba0d7550@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261011T070000Z
+DTEND:20261011T130000Z
+SUMMARY:VIC - Megadev 2026
+DESCRIPTION:https://eventhost.au/-/megadev-2026/about\n\nIGDA Melbourne wra
+ p party for game-industry peers to reconnect and finish Games Week.\n\nAud
+ ience: 18+.\nRegistration: Tickets required.\nThe event finishes at midnig
+ ht at the start of Monday 12 October.
+LOCATION:Moon Dog Doglands\, Melbourne VIC\, Australia
+URL:https://eventhost.au/-/megadev-2026/about
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8cd3e3fb-7d61-5206-bffa-d83cf2be7ee5@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261013T073000Z
+DTEND:20261013T113000Z
+SUMMARY:NSW - Beer and Pixels: Sydney Games Festival
+DESCRIPTION:https://www.meetup.com/igda-sydney/events/316524255/\n\nIGDA Sy
+ dney developer meetup where creators can bring prototypes for playtesting 
+ and meet peers.\n\nBring a playable prototype if you would like feedback. 
+ This entry covers the Sydney Games Festival session on 13 October.
+LOCATION:Off Broadway Hotel\, Sydney NSW\, Australia
+URL:https://www.meetup.com/igda-sydney/events/316524255/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:b78b4c71-a34b-552e-9e81-95328dd8b06d@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261014T073000Z
+DTEND:20261014T103000Z
+SUMMARY:NSW - Avant Harde Drive: Creative Tech Meetup
+DESCRIPTION:https://events.humanitix.com/avant-harde-drive-creative-tech-me
+ etup-sydney-games-festival\n\nCreative-technology talks and networking exp
+ loring games\, immersive work\, art\, and live performance.\n\nRegistratio
+ n: Free\, with limited capacity\; register via the event link.
+LOCATION:Knox Street Bar\, Garage 11 Knox Street\, Chippendale NSW 2008\, A
+ ustralia
+URL:https://events.humanitix.com/avant-harde-drive-creative-tech-meetup-syd
+ ney-games-festival
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

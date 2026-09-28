@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:370672fb-f6ac-5de1-b986-a7cc811e27f1@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261004T060000Z
+DTEND:20261004T080000Z
+SUMMARY:VIC - Taking Up Space Networking Event
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/taking-up-sp
+ ace\n\nCatered networking for women and gender-diverse developers followin
+ g the conference.\n\nAudience: Women and gender-diverse game developers.\n
+ Registration: Required\; see the event link.
+LOCATION:ACMI\, Swinburne space\, Fed Square\, Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/taking-up-space
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

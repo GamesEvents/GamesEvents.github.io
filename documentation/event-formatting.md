@@ -21,7 +21,7 @@ Sampled records included Waypoint Constellations, MASS Dev Day, Eye Candy Game J
 
 These defaults interpret the recent examples and David's current selection preferences; they are not claims that every old event follows the same template.
 
-**Title:** `STATE - Event name`. Use `NSW`, `VIC`, `QLD`, `SA`, `WA`, `TAS`, `ACT`, or `NT`. Preserve the organiser's recognisable name and year where useful. Use ordinary title casing rather than converting the entire name to uppercase. Keep long marketing subtitles out of the title. For a conference split into daily entries, append `(Day 1)`, `(Day 2)`, etc.
+**Title:** `STATE - Event name`. Use `NSW`, `VIC`, `QLD`, `SA`, `WA`, `TAS`, `ACT`, or `NT`. Preserve the organiser's recognisable name and year where useful. Use ordinary title casing rather than converting the entire name to uppercase. Keep long marketing subtitles out of the title. David prefers High Score and GCAP as single multi-day all-day entries, without daily suffixes.
 
 **Location:** put the venue and verified address in LOCATION. Do not invent an address from a similarly named venue. For hybrid workshops, retain the physical venue and explain the online option in the description. For an online-only event, use `Online` and link to the public attendance/registration page.
 
@@ -45,10 +45,10 @@ The export shows rich text stored inside Google's DESCRIPTION values, but that d
 
 - Include development talks, workshops, careers events, industry networking, game jams, creator showcases, and prototype playtesting.
 - Ordinary board-game nights, tournaments, public concerts, consumer expos, and long-running gallery exhibitions fall outside the current scope. Tabletop **development** events can qualify when they offer design discussion or playtesting.
-- Use individual scheduled sessions rather than an exhibition's entire run or a festival-wide placeholder. Split multi-day conferences into their daytime sessions when the published daily hours support it.
+- Use individual scheduled sessions rather than an exhibition's entire run or a festival-wide placeholder. High Score and GCAP are approved exceptions: use one all-day entry covering each conference's dates, with published daily hours in its description.
 - Capture the event's local IANA timezone. Melbourne uses `Australia/Melbourne`; Sydney uses `Australia/Sydney`. The export's calendar-level timezone is Melbourne, while the website displays Sydney time. Neither makes every Australian event an east-coast event.
 - Resolve dates including the year, daylight saving, overnight ends, missing times, and conflicting sources before generating the final ICS. Midnight in a date-only festival listing can be a default value; it is not proof that the event starts at midnight.
-- The CSV is research data. Blank datetime fields mean missing information, and flagged conflicts need review. Do not turn missing times into invented all-day events.
+- The CSV is research data. Blank datetime fields mean missing information, and flagged conflicts need review. Do not infer an event starts at midnight from a default festival header. For this approved batch, Play Now is represented by its confirmed date, with its unpublished hours and venue stated explicitly in the description; this is a date marker rather than a claim about attendance hours. Do not use that exception as a default for future incomplete announcements.
 
 ## Avoiding duplicate imports
 
@@ -60,6 +60,8 @@ Two specific findings in the September export demonstrate why:
 - A record named `NSW - Playmakers Arcade - Sydney Games Festival Edition` is a monthly first-Wednesday series beginning in May. Its October recurrence falls on 7 October, while the published festival event is on 14 October. Review this series before creating or changing a festival entry.
 
 Retain matching existing UIDs as research references. Do not assume re-importing an edited ICS will update an existing Google event. Handle existing-event corrections deliberately in the destination calendar. Use a stable new UID for each genuinely new event, and record preparation and confirmed import status in the diary.
+
+For the September 2026 batch, David requested skipping existing events. Parallels, Technically Games, and the related Playmakers Arcade series were therefore skipped along with the five exact matches. The explicitly excluded Beer and Pixels occurrence was prepared as a new one-off event with a new UID and no RRULE.
 
 ## ICS serialization checklist
 
@@ -74,3 +76,5 @@ Use [RFC 5545](https://www.rfc-editor.org/rfc/rfc5545) for serialization, separa
 - Do not add attendees, invitations, or reminders unless requested.
 
 When sampling a large export, unfold continuation lines before interpreting properties. Read a bounded selection of SUMMARY, DESCRIPTION, LOCATION, date, and recurrence fields rather than printing the entire file.
+
+Save prepared files under the repository's root [`ics/`](../ics/) directory. Keep research and formatting documentation here in `documentation/`; `docs/` remains the public website.

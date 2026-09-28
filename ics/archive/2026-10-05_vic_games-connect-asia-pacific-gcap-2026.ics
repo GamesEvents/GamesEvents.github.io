@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:207be104-ae51-5b62-b6da-fb35614f8413@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261008
+SUMMARY:VIC - Games Connect Asia Pacific (GCAP) 2026
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/gcap\n\nProf
+ essional game-development conference with technical learning\, industry di
+ scussions\, and networking.\n\nConference dates: 5–7 October 2026. Publi
+ shed daily attendance window: 8am–5pm\, Melbourne local time. See the ev
+ ent link for the detailed timetable. The Australian Game Developer Awards 
+ on 7 October have a separate calendar entry.
+LOCATION:Melbourne Convention and Exhibition Centre\, Plenary and Level 1\,
+  Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/gcap
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

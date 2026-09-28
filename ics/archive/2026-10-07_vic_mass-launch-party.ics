@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:0a0e4340-6ad9-5ba5-a01c-c60778016bee@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261007T080000Z
+DTEND:20261007T120000Z
+SUMMARY:VIC - MASS Launch Party
+DESCRIPTION:https://events.humanitix.com/mass-launch-party\n\nIndustry gath
+ ering celebrating the launch of a co-working space for independent game de
+ velopers.\n\nAudience: Games industry attendees only.\nRegistration: See t
+ he organiser ticket page.
+LOCATION:MASS\, 120 Oxford St\, Collingwood VIC 3066\, Australia
+URL:https://events.humanitix.com/mass-launch-party
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

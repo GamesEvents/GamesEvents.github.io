@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:ab822bd6-581b-54fe-9a05-09e84444e3c6@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261005T213000Z
+DTEND:20261005T230000Z
+SUMMARY:VIC - Xsolla Breakfast Meetup 2026
+DESCRIPTION:https://events.xsolla.com/xsollabreakfastmeetupinmelbourne\n\nX
+ solla provides payments\, web shops and other business tools for video gam
+ e developers and publishers. This breakfast during GCAP brings studio team
+ s and industry partners together for business conversations and networking
+ .\n\nRegistration: RSVP required. Places are limited and registration does
+  not guarantee attendance\; Xsolla will confirm invitations before the eve
+ nt.\n\nAbout Xsolla: https://xsolla.com/\nMIGW industry listing: https://g
+ amesweek.melbourne/events/industry-events/xsolla-breakfast-meet-up
+LOCATION:The Boatbuilders Yard\, 23 South Wharf Promenade\, South Wharf VIC
+  3006\, Australia
+URL:https://events.xsolla.com/xsollabreakfastmeetupinmelbourne
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

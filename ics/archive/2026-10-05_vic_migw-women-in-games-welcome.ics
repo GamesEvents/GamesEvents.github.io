@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:94e4322b-1fb1-5ed9-8d58-71e01dc93ea1@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261005T070000Z
+DTEND:20261005T110000Z
+SUMMARY:VIC - MIGW Women in Games Welcome
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/migw-women-i
+ n-games-welcome\n\nWelcome gathering connecting women across game developm
+ ent\, creative disciplines\, research\, and study.\n\nAudience: People who
+  self-identify as women working or studying across the games industry\; 18
+ +.\nRegistration: Email the organiser using the event page to request an i
+ nvitation.
+LOCATION:Yarra Botanica\, Southbank Promenade\, Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/migw-women-in-games-
+ welcome
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

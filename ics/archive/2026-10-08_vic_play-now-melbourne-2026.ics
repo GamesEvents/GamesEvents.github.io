@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:7a7b8a58-58dc-5602-ab33-adf0a809a02c@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:VIC - Play Now Melbourne 2026
+DESCRIPTION:https://vicscreen.vic.gov.au/playnow/\n\nBusiness market where 
+ selected developers pitch games to publishers\, investors\, and platform h
+ olders.\n\nConfirmed date: Thursday 8 October 2026. This is a date-only li
+ sting\; attendance hours and the venue have not been published on the revi
+ ewed public pages.\nAudience: Invited teams with games in active developme
+ nt. Expressions of interest are closed.\n\nOrganiser information: https://
+ vicscreen.vic.gov.au/playnow/
+URL:https://vicscreen.vic.gov.au/playnow/
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

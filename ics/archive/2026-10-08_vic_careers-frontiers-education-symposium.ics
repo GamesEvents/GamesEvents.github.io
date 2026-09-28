@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:64c027dc-2b08-5a3b-a5f5-2518bb5244d8@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261007T223000Z
+DTEND:20261008T040000Z
+SUMMARY:VIC - Careers + Frontiers: Education Symposium
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/careers-fron
+ tiers-education-symposium\n\nIndustry talks and developer networking for s
+ tudents and educators exploring games careers.
+LOCATION:ACMI\, Cinema 1\, Fed Square\, Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/careers-frontiers-ed
+ ucation-symposium
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

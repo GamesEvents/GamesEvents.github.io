@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:3ed3beaa-bd70-589b-91e8-b3e880583387@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261006T230000Z
+DTEND:20261007T070000Z
+SUMMARY:VIC - Games for Change Summit
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/games-for-ch
+ ange-summit\n\nTalks\, panels\, and keynotes connect developers with educa
+ tors and researchers making games for social impact.
+LOCATION:ACMI\, Cinema 2\, Fed Square\, Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/games-for-change-sum
+ mit
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

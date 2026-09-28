@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:8cd3e3fb-7d61-5206-bffa-d83cf2be7ee5@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261013T073000Z
+DTEND:20261013T113000Z
+SUMMARY:NSW - Beer and Pixels: Sydney Games Festival
+DESCRIPTION:https://www.meetup.com/igda-sydney/events/316524255/\n\nIGDA Sy
+ dney developer meetup where creators can bring prototypes for playtesting 
+ and meet peers.\n\nBring a playable prototype if you would like feedback. 
+ This entry covers the Sydney Games Festival session on 13 October.
+LOCATION:Off Broadway Hotel\, Sydney NSW\, Australia
+URL:https://www.meetup.com/igda-sydney/events/316524255/
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

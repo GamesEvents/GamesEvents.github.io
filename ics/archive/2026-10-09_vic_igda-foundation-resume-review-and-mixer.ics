@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:d12c7581-3ed5-52b1-a128-7d552117946e@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261009T000000Z
+DTEND:20261009T030000Z
+SUMMARY:VIC - IGDA Foundation: Resume Review and Mixer
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/igda-foundat
+ ion-resume-review-and-mixer\n\nIndustry networking and one-to-one portfoli
+ o or resume feedback for game-development careers.\n\nRegistration: Book a
+ n expert review session via the event page. Individual reviews are 15 minu
+ tes within the 11am–2pm event window.
+LOCATION:MASS\, 120 Oxford St\, Collingwood VIC 3066\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/igda-foundation-resu
+ me-review-and-mixer
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

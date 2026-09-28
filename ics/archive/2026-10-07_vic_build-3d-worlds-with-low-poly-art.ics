@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:ba7c37a3-46da-57d6-8694-504ea6bbfa1c@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261006T220000Z
+DTEND:20261006T233000Z
+SUMMARY:VIC - Build 3D Worlds with Low Poly Art
+DESCRIPTION:https://gamesweek.melbourne/events/dlc/build-3d-worlds-with-low
+ -poly-art-moorabbin\n\nHands-on introduction to voxel modelling and creati
+ ng simple 3D assets for games.\n\nBeginner-friendly workshop with an onlin
+ e livestream option.\nRegistration: Required\; see the event link for in-p
+ erson and online participation details.
+LOCATION:Holmesglen Institute of TAFE\, 488 South Road\, Moorabbin VIC\, Au
+ stralia
+URL:https://gamesweek.melbourne/events/dlc/build-3d-worlds-with-low-poly-ar
+ t-moorabbin
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:af4dcc62-9f94-5c08-9a00-99b2ba0d7550@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261011T070000Z
+DTEND:20261011T130000Z
+SUMMARY:VIC - Megadev 2026
+DESCRIPTION:https://eventhost.au/-/megadev-2026/about\n\nIGDA Melbourne wra
+ p party for game-industry peers to reconnect and finish Games Week.\n\nAud
+ ience: 18+.\nRegistration: Tickets required.\nThe event finishes at midnig
+ ht at the start of Monday 12 October.
+LOCATION:Moon Dog Doglands\, Melbourne VIC\, Australia
+URL:https://eventhost.au/-/megadev-2026/about
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

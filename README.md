@@ -12,12 +12,14 @@ Read this README and the diaries in [`documentation/`](documentation/) before ch
 
 For event work, read the [calendar formatting guide](documentation/event-formatting.md) and [2026 festival research notes](documentation/2026-festival-research.md). The [festival shortlist CSV](documentation/events/2026-festival-shortlist.csv) records timings, sources, and matches against the [supplied calendar export](documentation/aus_games_events_2026-09-26.ics).
 
+Prepared imports live in [`ics/`](ics/). Its [batch index](ics/README.md) lists the new events and the existing events that were skipped.
+
 **`docs/` is the public website directory. Write documentation in `documentation/`.** This project overrides the usual convention of putting agent diaries and plans in `docs/`.
 
 - Preserve the static, Google Calendar / Google Forms approach and the ability to hand management to community leaders.
 - Manage event content in Google Calendar; routine event additions do not require website changes.
 - Put decisions, plans, progress, and handoff notes in dated files under `documentation/`, and update the active diary during multi-step work.
-- Keep generated event imports under `documentation/events/` when needed. Put files in `docs/` only when they are intended to be served on the website.
+- Keep generated event imports under `ics/`, and research CSVs under `documentation/events/`. Put files in `docs/` only when they are intended to be served on the website.
 - Keep changes small and preserve existing uncommitted work. Follow the Operator's agent permissions; commits to `main` / `master` and publishing remain Operator responsibilities.
 - Do not add a backend, database, framework, build pipeline, or automated calendar integration without an explicit request.
 
@@ -29,7 +31,8 @@ For event work, read the [calendar formatting guide](documentation/event-formatt
 | [`docs/css/styles.css`](docs/css/styles.css) | Start Bootstrap Freelancer theme, including Bootstrap styles. |
 | [`docs/js/scripts.js`](docs/js/scripts.js) | Navigation behaviour: shrinking navbar, scrollspy, and mobile menu collapse. |
 | [`docs/assets/`](docs/assets/) | Public favicon, social preview image, and Merry H's event-board image. |
-| [`documentation/`](documentation/) | Maintainer notes, decisions, dated diaries, and future event import files. |
+| [`documentation/`](documentation/) | Maintainer notes, decisions, dated diaries, research CSVs, and supplied calendar exports. |
+| [`ics/`](ics/) | Prepared event imports, with a batch index and import status. |
 | [`package.json`](package.json) | Minimal package metadata; no dependencies or build scripts. |
 | [`LICENSE`](LICENSE) | MIT licence with the upstream Start Bootstrap notice. |
 
@@ -68,7 +71,7 @@ An agent can prepare a downloadable `.ics` file for one event or a batch without
 
 Resolve ambiguous dates, timezones, or durations before producing the final import. Use the event's local timezone and account for daylight saving; the website's Sydney display timezone is not a default for every event in Australia. Include the source URL in the description so attendees can check current information.
 
-Save imports as `documentation/events/YYYY-MM-DD_event-slug.ics` when needed, and record what was prepared and whether it was imported in the active diary. Preparing a file does not add an event to the live calendar.
+Save imports as `ics/YYYY-MM-DD_state_event-slug.ics`, and record what was prepared and whether it was imported in the active diary. Preparing a file does not add an event to the live calendar. High Score and GCAP should each be a single multi-day all-day entry. Keep practical conference hours in the description when published.
 
 To import on a computer, open Google Calendar and go to **Settings → Import & export**. Select the `.ics` file, choose the **shared community calendar** as the destination, and import. Check the resulting title, dates, time, location, and links. Google defaults to the primary calendar, so select the destination deliberately. Importing is a one-time transfer; subsequent edits should be made in the destination calendar. See [Google's import instructions](https://support.google.com/calendar/answer/37118?hl=en).
 

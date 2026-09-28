@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:b674411c-1d0d-5481-97f1-96f0e273e2d8@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261005
+SUMMARY:VIC - High Score 2026
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/high-score\n
+ \nGame-audio conference covering composition\, sound design\, production t
+ echniques\, and industry practice.\n\nConference dates: 3–4 October 2026
+ . Published daily attendance window: 9am–5pm\, Melbourne local time. See
+  the event link for the detailed timetable.
+LOCATION:ACMI\, Cinema 1 and other spaces\, Fed Square\, Melbourne VIC\, Au
+ stralia
+URL:https://gamesweek.melbourne/events/industry-events/high-score
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

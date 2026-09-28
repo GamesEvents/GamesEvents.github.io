@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:50c761ce-5f41-5dfb-abd4-444e5ef77ddb@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261007T040000Z
+DTEND:20261007T070000Z
+SUMMARY:VIC - Australian Game Developer Awards 2026
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/australian-g
+ ame-developer-awards\n\nAustralian industry awards recognising achievement
+ s by game creators\, studios\, and individuals.\n\nAudience: 18+.\nRegistr
+ ation: Tickets required\; see the event link.
+LOCATION:Melbourne Convention and Exhibition Centre\, Plenary and Level 1\,
+  Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/australian-game-deve
+ loper-awards
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

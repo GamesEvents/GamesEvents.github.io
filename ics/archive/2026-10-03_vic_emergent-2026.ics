@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:022e40b2-5434-5542-b3bc-fc5cd45fff14@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261003T000000Z
+DTEND:20261003T070000Z
+SUMMARY:VIC - EMERGENT 2026
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/emergent-202
+ 6\n\nEmerging developers share practical experience through talks\, panels
+ \, and roundtables.
+LOCATION:South Melbourne Community Centre\, 1 Ferrars Pl\, South Melbourne 
+ VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/emergent-2026
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

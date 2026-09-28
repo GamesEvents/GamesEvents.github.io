@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:6ba19726-2da5-56ea-a1e2-6f3de4c990eb@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261007T030000Z
+DTEND:20261007T043000Z
+SUMMARY:VIC - Design Your Own Game Levels
+DESCRIPTION:https://gamesweek.melbourne/events/dlc/design-your-own-game-lev
+ els-moorabbin\n\nPractical level-design workshop exploring layout\, player
+  movement\, scale\, and environmental storytelling.\n\nBeginner-friendly w
+ orkshop with an online livestream option.\nRegistration: Required\; see th
+ e event link for in-person and online participation details.
+LOCATION:Holmesglen Institute of TAFE\, 488 South Road\, Moorabbin VIC\, Au
+ stralia
+URL:https://gamesweek.melbourne/events/dlc/design-your-own-game-levels-moor
+ abbin
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

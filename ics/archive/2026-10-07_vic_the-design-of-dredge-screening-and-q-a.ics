@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:fad4eac7-35e5-5e3e-ba56-d15181fd2f63@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261007T070000Z
+DTEND:20261007T090000Z
+SUMMARY:VIC - The Design of DREDGE: Screening and Q&A
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/the-design-o
+ f-dredge-screening-q-and-a\n\nMaking-of documentary and developer Q&A expl
+ oring the design and development of DREDGE.
+LOCATION:ACMI\, Cinema 2\, Fed Square\, Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/the-design-of-dredge
+ -screening-q-and-a
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

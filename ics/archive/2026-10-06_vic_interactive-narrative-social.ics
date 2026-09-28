@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:493e9cc5-3da1-53c8-9a38-379320092f64@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261006T080000Z
+DTEND:20261006T110000Z
+SUMMARY:VIC - Interactive Narrative Social
+DESCRIPTION:https://gamesweek.melbourne/events/dlc/interactive-narrative-so
+ cial-collingwood\n\nConversation and networking for games writers\, narrat
+ ive designers\, and interactive storytellers.\n\nAustralian Writers Guild 
+ membership is not required.
+LOCATION:Trainscendence\, Rolling Stock Lane\, Unit 6/48 Easey St\, Colling
+ wood VIC\, Australia
+URL:https://gamesweek.melbourne/events/dlc/interactive-narrative-social-col
+ lingwood
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

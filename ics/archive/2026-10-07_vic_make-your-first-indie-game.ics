@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:ab7b3f25-c0a1-5d64-a901-c88e1a8b8b9b@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261006T233000Z
+DTEND:20261007T010000Z
+SUMMARY:VIC - Make Your First Indie Game
+DESCRIPTION:https://gamesweek.melbourne/events/dlc/make-your-first-indie-ga
+ me-moorabbin\n\nBeginner workshop on scenes\, interactions\, mechanics\, a
+ nd building a playable game prototype.\n\nBeginner-friendly workshop with 
+ an online livestream option.\nRegistration: Required\; see the event link 
+ for in-person and online participation details.
+LOCATION:Holmesglen Institute of TAFE\, 488 South Road\, Moorabbin VIC\, Au
+ stralia
+URL:https://gamesweek.melbourne/events/dlc/make-your-first-indie-game-moora
+ bbin
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

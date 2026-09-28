@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:3d0f2f78-b5e3-5c00-a206-558c64a8395a@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261008T053000Z
+DTEND:20261008T113000Z
+SUMMARY:VIC - TGDA Presents: DevCon 2026
+DESCRIPTION:https://events.humanitix.com/tgda-devcon-2026\n\nTabletop devel
+ oper talks\, panels\, prototype playtesting\, and networking with designer
+ s and publishers.
+LOCATION:The Mission to Seafarers Victoria\, 717 Flinders St\, Docklands VI
+ C\, Australia
+URL:https://events.humanitix.com/tgda-devcon-2026
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

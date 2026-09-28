@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:d59aa5db-373c-5d1f-9ec5-e59b1c936ceb@gamesevents.github.io
+DTSTAMP:20260928T153745Z
+DTSTART:20261007T210000Z
+DTEND:20261007T230000Z
+SUMMARY:VIC - New Zealand Game Developers Breakfast
+DESCRIPTION:https://gamesweek.melbourne/events/industry-events/new-zealand-
+ game-developers-breakfast\n\nNetworking breakfast connecting attendees wit
+ h New Zealand developers and potential collaborators.\n\nRegistration: Inv
+ itation-only. Email the organiser using the event page to request an invit
+ ation.
+LOCATION:Cargo Hall\, Melbourne VIC\, Australia
+URL:https://gamesweek.melbourne/events/industry-events/new-zealand-game-dev
+ elopers-breakfast
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
