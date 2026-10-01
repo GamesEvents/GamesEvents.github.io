@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:41605128-f47e-501e-9d8c-d7c5a908fbd1@gamesevents.github.io
+DTSTAMP:20260930T112614Z
+DTSTART:20261014T070000Z
+DTEND:20261014T100000Z
+SUMMARY:NSW - Board Game Social + Tabletop Dev Night
+DESCRIPTION:https://events.humanitix.com/sydney-games-festival-tabletop-dev
+ -night-fortress-sydney\n\nA free board and card game social with designate
+ d tables where tabletop designers share new board games and RPGs for visit
+ ors to try. Open to players and makers of all experience levels.\n\nThe or
+ ganiser booking page lists 6–9 pm\; the festival programme currently lis
+ ts 6–10 pm. Check the organiser page for the latest finish time.
+LOCATION:Fortress Sydney\, 28 Broadway\, Chippendale NSW 2008\, Australia
+URL:https://events.humanitix.com/sydney-games-festival-tabletop-dev-night-f
+ ortress-sydney
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8aafe6e0-ffe7-520d-884b-72cd33e520b1@gamesevents.github.io
+DTSTAMP:20260930T112614Z
+DTSTART:20261015T070000Z
+DTEND:20261015T100000Z
+SUMMARY:NSW - Sydney Tertiary Student Showcase
+DESCRIPTION:https://events.humanitix.com/sydney-games-festival-student-show
+ case-fortress-sydney\n\nPlay games made by tertiary students from across S
+ ydney\, meet their creators and hear about the development process behind 
+ the projects. An evening to connect with other aspiring game makers and lo
+ cal developers.
+LOCATION:2315 Bar\, Fortress Sydney\, 28 Broadway\, Chippendale NSW 2008\, 
+ Australia
+URL:https://events.humanitix.com/sydney-games-festival-student-showcase-for
+ tress-sydney
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:e43c86d2-095b-58a1-bb26-0cf327133c19@gamesevents.github.io
+DTSTAMP:20260930T112614Z
+DTSTART:20261016T010000Z
+DTEND:20261016T080000Z
+SUMMARY:NSW - Eye Candy Game Jam: CBD Showcase Day
+DESCRIPTION:https://events.humanitix.com/eye-candy-game-jam-showcase\n\nEye
+  Candy Game Jam participants present their games at the UNSW CBD Campus. M
+ eet the makers and see the results of a jam focused on visual polish\, sha
+ ders\, effects and lighting. Every Game Talk Possible runs concurrently up
+ stairs. This showcase is separate from the 2 October game-jam launch night
+ .
+LOCATION:UNSW CBD Campus\, Room 401\, level 4/210 George St\, Sydney NSW 20
+ 00\, Australia
+URL:https://events.humanitix.com/eye-candy-game-jam-showcase
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Australian game-making communities · Festival Atlas</title>
+    <meta name="description" content="Australian game-development talks, workshops, playtests and community connections. Reviewed festival guides and the live community calendar.">
+    <meta property="og:title" content="Australian game-making communities">
+    <meta property="og:description" content="Find Australian game-development events and communities.">
+    <meta property="og:image" content="https://gamesevents.github.io/assets/gamedev_preview.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@frostickle">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/style-trials.css">
+    <script src="js/events-data.js" defer></script>
+    <script src="js/style-trials.js" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWQYLQZ19S"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-CWQYLQZ19S');</script>
+  </head>
+  <body id="page-top" class="style-2" data-style="2">
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index_style_2.html">Australian GameDev Events<span>Talks, workshops, playtests &amp; people</span>
+        </a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="index_style_2.html">Events</a>
+          <a href="migw_style_2.html">MIGW</a>
+          <a href="sydney_style_2.html">Sydney</a>
+          <a href="communities_style_2.html" aria-current="page">Communities</a>
+          <a href="https://calendar.google.com/calendar/u/0/r?cid=e6f886bb015fd0782baab1c0a6779bec705be80e0ea616b61d91a55faddc522e@group.calendar.google.com">Subscribe</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQmiwTdEI2wugkm4QHZqBi1TUiC0ahSbMNWVGbHEg2G5qO6Q/viewform" class="button secondary">Submit an event</a>
+        </nav>
+      </div>
+    </header>
+    <main id="content" class="wrap">
+      <div class="atlas-hero">
+        <div>
+          <h1>Find the people behind the games.</h1>
+          <p class="lede">Start with a community, see what it is about, then follow its current programme.</p>
+        </div>
+        <div class="hero-art">
+          <img class="illustration" src="assets/festival-sydney.svg" width="720" height="500" alt="">
+          <p class="hero-caption">An illustrated guide to places for game makers.</p>
+        </div>
+      </div>
+      <section id="communities" class="section" data-directory aria-labelledby="community-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="community-title">Find a community near you</h2>
+            <p>A few starting points for meeting other game makers. Check organisers for current meetup dates and entry details.</p>
+          </div>
+          <a href="communities_style_2.html">Browse community guides</a>
+        </div>
+        <div class="directory-tools" data-directory-controls hidden>
+          <label for="community-state">Community state / territory</label>
+          <select id="community-state" data-community-state>
+            <option value="">All states and territories</option>
+            <option value="nsw">New South Wales</option>
+            <option value="vic">Victoria</option>
+            <option value="qld">Queensland</option>
+            <option value="sa">South Australia</option>
+            <option value="wa">Western Australia</option>
+            <option value="tas">Tasmania</option>
+            <option value="act">Australian Capital Territory</option>
+            <option value="nt">Northern Territory</option>
+          </select>
+          <p class="fine-print" data-community-count role="status" aria-live="polite"></p>
+        </div>
+        <div class="directory-list" data-communities></div>
+        <div class="empty-state" data-community-empty hidden>
+          <p>No profile for that state in this starting directory. <a href="#calendar">Try the live calendar</a> or suggest a community through the event form.</p>
+          <button class="secondary" type="button" data-community-reset>Show all communities</button>
+        </div>
+        <noscript>
+          <ul>
+            <li>
+              <a href="igda_style_2.html">IGDA chapter starting points</a>
+            </li>
+            <li>
+              <a href="squiggly_river_style_2.html">Squiggly River, Brisbane</a>
+            </li>
+          </ul>
+        </noscript>
+      </section>
+      <section class="section">
+        <h2>Help grow the directory</h2>
+        <p>Know another creator community? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQmiwTdEI2wugkm4QHZqBi1TUiC0ahSbMNWVGbHEg2G5qO6Q/viewform">Send its official website and location</a> so it can be reviewed. Please check organisers for venue, admission and current dates.</p>
+      </section>
+      <section id="calendar" class="section calendar-section" data-calendar aria-labelledby="calendar-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="calendar-title">Live community calendar</h2>
+            <p>All community events from the shared calendar. Times here are displayed in Sydney time; check the organiser for local details.</p>
+          </div>
+        </div>
+        <p class="fine-print">Guide and community filters do not change this calendar.</p>
+        <div class="calendar-tools" data-calendar-tools hidden aria-label="Calendar views">
+          <button type="button" data-view="agenda" aria-pressed="false" aria-controls="calendar-agenda">Upcoming</button>
+          <button type="button" data-view="month" aria-pressed="false" aria-controls="calendar-month">Month</button>
+          <button type="button" data-view="both" aria-pressed="false" aria-controls="calendar-agenda calendar-month">Both views</button>
+        </div>
+        <div class="calendar-panels" data-selection="both">
+          <section class="calendar-panel" id="calendar-agenda" data-calendar-panel="agenda" aria-labelledby="agenda-title">
+            <h3 id="agenda-title">Upcoming events</h3>
+            <div class="frame-scroll">
+              <iframe class="calendar-frame" src="https://calendar.google.com/calendar/embed?src=e6f886bb015fd0782baab1c0a6779bec705be80e0ea616b61d91a55faddc522e%40group.calendar.google.com&amp;ctz=Australia%2FSydney&amp;mode=AGENDA" title="Live Australian GameDev events agenda, Sydney timezone" loading="lazy"></iframe>
+            </div>
+          </section>
+          <section class="calendar-panel" id="calendar-month" data-calendar-panel="month" aria-labelledby="month-title">
+            <h3 id="month-title">Month at a glance</h3>
+            <div class="frame-scroll">
+              <iframe class="calendar-frame month-frame" src="https://calendar.google.com/calendar/embed?src=e6f886bb015fd0782baab1c0a6779bec705be80e0ea616b61d91a55faddc522e%40group.calendar.google.com&amp;ctz=Australia%2FSydney" title="Live Australian GameDev month calendar, Sydney timezone" loading="lazy"></iframe>
+            </div>
+          </section>
+        </div>
+        <div class="calendar-links">
+          <div class="actions">
+            <a href="https://calendar.google.com/calendar/u/0/r?cid=e6f886bb015fd0782baab1c0a6779bec705be80e0ea616b61d91a55faddc522e@group.calendar.google.com" class="button">Subscribe to the calendar</a>
+            <a href="https://calendar.google.com/calendar/ical/e6f886bb015fd0782baab1c0a6779bec705be80e0ea616b61d91a55faddc522e%40group.calendar.google.com/public/basic.ics" class="button secondary">Download live ICS</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1R7Q0sn3e5eLz0vadkuTnH1SX8uOyd-V4yt2mp5KMw_K9lA/viewform">Mailing list</a>
+          </div>
+          <p class="fine-print">
+            <a href="https://calendar.google.com/calendar/embed?src=e6f886bb015fd0782baab1c0a6779bec705be80e0ea616b61d91a55faddc522e%40group.calendar.google.com&amp;ctz=Australia%2FSydney">Open Google Calendar separately</a> if an embed is unavailable or difficult to use.</p>
+        </div>
+      </section>
+      <section id="MIGW" class="section" aria-labelledby="festival-title">
+        <h2 id="festival-title">Two festival guides for game makers</h2>
+        <div class="festival-links">
+          <a class="festival-link" href="migw_style_2.html">
+            <span class="fine-print">VIC · Melbourne · 2026</span>
+            <strong>Melbourne International Games Week</strong>
+            <p>Conference days, creative practice, career conversations and industry connections.</p>
+            <span class="link-label">Explore the MIGW guide →</span>
+          </a>
+          <a class="festival-link" href="sydney_style_2.html">
+            <span class="fine-print">NSW · Sydney · 2026</span>
+            <strong>Sydney Games Festival</strong>
+            <p>Creator talks, local projects, game-audio workshops and places to test your work.</p>
+            <span class="link-label">Explore the Sydney guide →</span>
+          </a>
+        </div>
+      </section>
+      <section id="useful-links" class="section" aria-labelledby="resources-title">
+        <h2 id="resources-title">Useful links</h2>
+        <div class="resource-grid">
+          <div class="resource-box">
+            <h3>Festival programmes</h3>
+            <ul>
+              <li>
+                <a href="https://gamesweek.melbourne/">MIGW official programme</a>
+              </li>
+              <li>
+                <a href="https://sydneygamesfestival.org/program/">Sydney Games Festival programme</a>
+              </li>
+              <li>
+                <a href="https://www.screenhub.com.au/news/industry-news/migw-2026-event-guide-2708471/">ScreenHub: MIGW 2026 event guide</a>
+              </li>
+            </ul>
+          </div>
+          <div class="resource-box">
+            <h3>Community &amp; industry</h3>
+            <ul>
+              <li>
+                <a href="https://www.gameworkers.com.au/">Game Workers Australia</a>
+              </li>
+              <li>
+                <a href="https://discord.gg/jRn9FMz">Community Discord</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/groups/igdam/">IGDA Melbourne Facebook group</a>
+              </li>
+              <li>
+                <a href="https://www.tsumea.com/">Tsumea</a>
+              </li>
+            </ul>
+          </div>
+          <div class="resource-box">
+            <h3>Creative resources</h3>
+            <ul>
+              <li>
+                <a href="https://sabby.gallery/">Sabby Gallery</a>
+              </li>
+              <li>
+                <a href="https://serenade.games/">Serenade Games</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/serenadegames/">Serenade Games on Instagram</a>
+              </li>
+              <li>
+                <a href="https://indiedigest.dev/">Indie Digest</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-inner">
+          <p>A community calendar for people making games in Australia. Managed through Google Calendar and community submissions.</p>
+          <div class="footer-links">
+            <a href="https://twitter.com/frostickle">David Ma</a>
+            <a href="https://discord.gg/TrsqUQre">Community Discord</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1R7Q0sn3e5eLz0vadkuTnH1SX8uOyd-V4yt2mp5KMw_K9lA/viewform">Mailing list</a>
+            <a href="#page-top">Back to top</a>
+          </div>
+        </div>
+        <nav class="trial-links" aria-label="Compare designs">
+          <span>Compare this page:</span>
+          <a href="communities_style_1.html">Programme Desk</a>
+          <a href="communities_style_2.html">Festival Atlas</a>
+          <a href="communities_style_3.html">Common Room</a>
+          <a href="index.html">Current website</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

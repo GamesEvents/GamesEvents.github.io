@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:8aafe6e0-ffe7-520d-884b-72cd33e520b1@gamesevents.github.io
+DTSTAMP:20260930T112614Z
+DTSTART:20261015T070000Z
+DTEND:20261015T100000Z
+SUMMARY:NSW - Sydney Tertiary Student Showcase
+DESCRIPTION:https://events.humanitix.com/sydney-games-festival-student-show
+ case-fortress-sydney\n\nPlay games made by tertiary students from across S
+ ydney\, meet their creators and hear about the development process behind 
+ the projects. An evening to connect with other aspiring game makers and lo
+ cal developers.
+LOCATION:2315 Bar\, Fortress Sydney\, 28 Broadway\, Chippendale NSW 2008\, 
+ Australia
+URL:https://events.humanitix.com/sydney-games-festival-student-showcase-for
+ tress-sydney
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

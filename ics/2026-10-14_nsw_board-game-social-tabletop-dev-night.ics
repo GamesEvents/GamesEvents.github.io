@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:41605128-f47e-501e-9d8c-d7c5a908fbd1@gamesevents.github.io
+DTSTAMP:20260930T112614Z
+DTSTART:20261014T070000Z
+DTEND:20261014T100000Z
+SUMMARY:NSW - Board Game Social + Tabletop Dev Night
+DESCRIPTION:https://events.humanitix.com/sydney-games-festival-tabletop-dev
+ -night-fortress-sydney\n\nA free board and card game social with designate
+ d tables where tabletop designers share new board games and RPGs for visit
+ ors to try. Open to players and makers of all experience levels.\n\nThe or
+ ganiser booking page lists 6–9 pm\; the festival programme currently lis
+ ts 6–10 pm. Check the organiser page for the latest finish time.
+LOCATION:Fortress Sydney\, 28 Broadway\, Chippendale NSW 2008\, Australia
+URL:https://events.humanitix.com/sydney-games-festival-tabletop-dev-night-f
+ ortress-sydney
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

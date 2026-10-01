@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GamesEvents//Australian GameDev Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:e43c86d2-095b-58a1-bb26-0cf327133c19@gamesevents.github.io
+DTSTAMP:20260930T112614Z
+DTSTART:20261016T010000Z
+DTEND:20261016T080000Z
+SUMMARY:NSW - Eye Candy Game Jam: CBD Showcase Day
+DESCRIPTION:https://events.humanitix.com/eye-candy-game-jam-showcase\n\nEye
+  Candy Game Jam participants present their games at the UNSW CBD Campus. M
+ eet the makers and see the results of a jam focused on visual polish\, sha
+ ders\, effects and lighting. Every Game Talk Possible runs concurrently up
+ stairs. This showcase is separate from the 2 October game-jam launch night
+ .
+LOCATION:UNSW CBD Campus\, Room 401\, level 4/210 George St\, Sydney NSW 20
+ 00\, Australia
+URL:https://events.humanitix.com/eye-candy-game-jam-showcase
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
